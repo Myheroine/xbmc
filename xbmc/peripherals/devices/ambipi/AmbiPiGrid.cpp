@@ -36,7 +36,7 @@ CAmbiPiGrid::CAmbiPiGrid(unsigned int width, unsigned int height) :
   m_height(height)
 {  
   
-  m_numTiles = (m_width * 2) + ((m_height - 2) * 2);
+  m_numTiles = (m_width - 2) * 2) + ((m_height - 2) * 2);
   unsigned int allocSize = m_numTiles * sizeof(Tile);
   m_tiles = (Tile*)malloc(allocSize);
   ZeroMemory(m_tiles, allocSize);
